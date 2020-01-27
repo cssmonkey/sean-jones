@@ -1,0 +1,46 @@
+@mixin design-system-elements-fonts {
+  // // * Variables
+  // // ====================
+  // $font-path: "../../assets/fonts/" !default;
+
+  // // * Font Faces
+  // // ====================
+  // @font-face {
+  //   font-family: "avenir";
+  //   src: url(#{$font-path}avenir-book.eot);
+  //   src: url(#{$font-path}avenir-book.eot?#iefix) format("embedded-opentype"),
+  //     url(#{$font-path}avenir-book.svg#avenirBook) format("svg"),
+  //     url(#{$font-path}avenir-book.woff2) format("woff2"),
+  //     url(#{$font-path}avenir-book.woff) format("woff"),
+  //     url(#{$font-path}avenir-book.ttf) format("truetype");
+  //   font-weight: normal;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
+
+  // @font-face {
+  //   font-family: "avenir";
+  //   src: url(#{$font-path}avenir-black.eot);
+  //   src: url(#{$font-path}avenir-black.eot?#iefix) format("embedded-opentype"),
+  //     url(#{$font-path}avenir-black.svg#avenirBlack) format("svg"),
+  //     url(#{$font-path}avenir-black.woff2) format("woff2"),
+  //     url(#{$font-path}avenir-black.woff) format("woff"),
+  //     url(#{$font-path}avenir-black.ttf) format("truetype");
+  //   font-weight: bold;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
+
+  // @font-face {
+  //   font-family: "caecilia-roman-heavy";
+  //   src: url(#{$font-path}caecilia-roman-heavy.eot);
+  //   src: url(#{$font-path}caecilia-roman-heavy.eot?#iefix) format("embedded-opentype"),
+  //     url(#{$font-path}caecilia-roman-heavy.svg#caeciliaRoman) format("svg"),
+  //     url(#{$font-path}caecilia-roman-heavy.woff2) format("woff2"),
+  //     url(#{$font-path}caecilia-roman-heavy.woff) format("woff"),
+  //     url(#{$font-path}caecilia-roman-heavy.ttf) format("truetype");
+  //   font-weight: normal;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/core.scss";
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__inner {
+    flex: 1;
+    padding: $base-spacing * 2;
+    max-width: 65rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__footer {
+    padding: $base-spacing $base-spacing * 2;
+
+    a {
+      color: get-color(grey);
+      text-decoration: none;
+      transition: color 0.25s ease-in-out;
+    }
+    a:hover,
+    a:active {
+      color: get-color(black);
+    }
+  }
+  &__footer-item {
+    display: block;
+    padding: $base-spacing 0;
+  }
+
+  @include breakpoint(medium) {
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__footer-item {
+      flex: none;
+    }
+  }
+}

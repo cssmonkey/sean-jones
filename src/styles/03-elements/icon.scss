@@ -1,0 +1,16 @@
+@mixin design-system-elements-icon {
+  .icon--small {
+    width: $icon-size;
+    height: $icon-size;
+  }
+
+  .icon--medium {
+    width: $icon-size--medium;
+    height: $icon-size--medium;
+  }
+
+  .icon--large {
+    width: $icon-size--large;
+    height: $icon-size--large;
+  }
+}

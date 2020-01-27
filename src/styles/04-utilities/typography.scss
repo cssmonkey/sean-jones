@@ -1,0 +1,19 @@
+@mixin design-system-utilities-typography {
+  .u-font-bold {
+    font-weight: bold;
+  }
+
+  .u-font-italic {
+    font-style: italic;
+  }
+
+  .u-break-word {
+    word-break: break-word;
+  }
+
+  @each $font in $fontsFamilies {
+    .u-font-#{map-get($font, class)} {
+      font-family: map-get($font, family);
+    }
+  }
+}
