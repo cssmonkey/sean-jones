@@ -1,0 +1,16 @@
+@import "../../styles/app.scss";
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    margin: $base-spacing;
+    flex: none;
+    padding: $base-spacing $base-spacing * 2;
+    background-color: get-color(pink);
+    color: #000;
+  }
+  // li:not(:last-child) {
+  //   margin-bottom: $base-spacing;
+  // }
+}

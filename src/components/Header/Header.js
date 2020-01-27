@@ -21,14 +21,26 @@ const Header = () => (
       </p>
     </div>
     <div class="page-header__footer u-font-heading h600 u-grey">
-      <a href="" target="_blank" className="page-header__footer-item">
+      <a
+        href="http://github.com/cssmonkey"
+        target="_blank"
+        className="page-header__footer-item"
+      >
         <FontAwesomeIcon icon={faGithub} className="u-margin-right-1" /> Github
       </a>
-      <a href="" target="_blank" className="page-header__footer-item">
+      <a
+        href="http://codepen.io/cssmonkey/public/"
+        target="_blank"
+        className="page-header__footer-item"
+      >
         <FontAwesomeIcon icon={faCodepen} className="u-margin-right-1" />{" "}
         Codepen
       </a>
-      <a href="" target="_blank" className="page-header__footer-item">
+      <a
+        href="http://uk.linkedin.com/pub/sean-jones/1/987/8b"
+        target="_blank"
+        className="page-header__footer-item"
+      >
         <FontAwesomeIcon icon={faLinkedin} className="u-margin-right-1" />{" "}
         LinkedIn
       </a>

@@ -2,24 +2,31 @@ import React from "react"
 
 import Layout from "../components/Layout/Layout"
 import Section from "../components/Section/Section"
+import FeatureList from "../components/FeatureList/FeatureList"
 import SEO from "../components/Seo/Seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Section className="u-bg-black">
+    {/* <Section className="u-bg-black">
       <h2 className="u-font-heading h300 u-offwhite u-margin-bottom-4">
         Front End development with a focus on JavaScript, responsive design and
         accessibility
       </h2>
       <div className="u-margin-bottom-4">
         <h3 className="u-font-heading h500 u-font-light u-offwhite u-margin-bottom-1">
-          Modern technology stack
+          Technologies I work with most include:
         </h3>
-        <p className="u-offwhite">
-          Some of the technologies I work with most include: SCSS/BEM,
-          JavaScript/ES6, React, Redux, Git and VS Code
-        </p>
+        <FeatureList
+          listItems={[
+            "SCSS/BEM",
+            "JavaScript/ES6",
+            "React",
+            "Redux",
+            "Git",
+            "VS Code",
+          ]}
+        ></FeatureList>
       </div>
       <div className="u-margin-bottom-4">
         <h3 className="u-font-heading h500 u-font-light u-offwhite u-margin-bottom-1">
@@ -49,11 +56,18 @@ const IndexPage = () => (
           Modern technology stack
         </h3>
         <p className="u-offwhite">
-          Some of the technologies I work with most include: SCSS/BEM,
-          JavaScript/ES6, React, Redux, Git and VS Code
+          Some of the technologies I work with most include:
         </p>
+        <ul>
+          <li>SCSS/BEM</li>
+          <li>JavaScript/ES6</li>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Git</li>
+          <li>VS Code</li>
+        </ul>
       </div>
-    </Section>
+    </Section> */}
   </Layout>
 )
 
