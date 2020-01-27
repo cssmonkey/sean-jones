@@ -1,11 +1,9 @@
 @import "base";
 @import "definition-list";
-@import "fonts";
 @import "icon";
 
 @mixin design-system-elements {
   @include design-system-elements-base;
   @include design-system-elements-definition-list;
-  @include design-system-elements-fonts;
   @include design-system-elements-icon;
 }

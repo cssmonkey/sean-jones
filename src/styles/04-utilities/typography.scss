@@ -1,6 +1,9 @@
 @mixin design-system-utilities-typography {
   .u-font-bold {
-    font-weight: bold;
+    font-weight: 600;
+  }
+  .u-font-light {
+    font-weight: 300;
   }
 
   .u-font-italic {

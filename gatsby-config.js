@@ -33,14 +33,11 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Roboto`,
-            variants: [`400`],
-          },
-          {
-            family: `Song Myung`,
-            variants: [`400`],
+            family: `Open Sans`,
+            variants: [`300`, `400`, `600`],
           },
         ],
+        display: "swap",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

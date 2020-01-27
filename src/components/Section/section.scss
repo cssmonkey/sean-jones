@@ -1,0 +1,17 @@
+@import "../../styles/core.scss";
+
+.section {
+  &__inner {
+    padding: $base-spacing * 2;
+  }
+
+  @include breakpoint(medium) {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 62rem;
+      min-height: 100vh;
+    }
+  }
+}
