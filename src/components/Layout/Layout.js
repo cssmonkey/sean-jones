@@ -8,9 +8,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import Header from "../Header/Header"
 import "../../styles/app.scss"
-
 import "./layout.scss"
 
 const Layout = ({ children }) => {
