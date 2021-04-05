@@ -1,6 +1,5 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons"
 import {
   faGithub,
   faCodepen,
@@ -24,6 +23,7 @@ const Header = () => (
       <a
         href="http://github.com/cssmonkey"
         target="_blank"
+        rel="noopener noreferrer"
         className="page-header__footer-item"
       >
         <FontAwesomeIcon icon={faGithub} className="u-margin-right-1" /> Github
@@ -31,6 +31,7 @@ const Header = () => (
       <a
         href="https://codepen.io/cssmonkey"
         target="_blank"
+        rel="noopener noreferrer"
         className="page-header__footer-item"
       >
         <FontAwesomeIcon icon={faCodepen} className="u-margin-right-1" />{" "}
@@ -39,6 +40,7 @@ const Header = () => (
       <a
         href="http://uk.linkedin.com/pub/sean-jones/1/987/8b"
         target="_blank"
+        rel="noopener noreferrer"
         className="page-header__footer-item"
       >
         <FontAwesomeIcon icon={faLinkedin} className="u-margin-right-1" />{" "}
