@@ -29,7 +29,7 @@ const Header = () => (
         <FontAwesomeIcon icon={faGithub} className="u-margin-right-1" /> Github
       </a>
       <a
-        href="http://codepen.io/cssmonkey/public/"
+        href="https://codepen.io/cssmonkey"
         target="_blank"
         className="page-header__footer-item"
       >
