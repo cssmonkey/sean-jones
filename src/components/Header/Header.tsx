@@ -1,15 +1,11 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faGithub,
-  faCodepen,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faCodepen, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import "./header.scss"
+import "./header.scss";
 
 const Header = () => (
-  <header class="page-header">
+  <header className="page-header">
     <div className="page-header__inner">
       <h1 className="u-font-heading h100 u-green">
         Hello
@@ -19,7 +15,7 @@ const Header = () => (
         I'm a front end developer based in Glasgow, Scotland.
       </p>
     </div>
-    <div class="page-header__footer u-font-heading h600 u-grey">
+    <div className="page-header__footer u-font-heading h600 u-grey">
       <a
         href="http://github.com/cssmonkey"
         target="_blank"
@@ -34,8 +30,7 @@ const Header = () => (
         rel="noopener noreferrer"
         className="page-header__footer-item"
       >
-        <FontAwesomeIcon icon={faCodepen} className="u-margin-right-1" />{" "}
-        Codepen
+        <FontAwesomeIcon icon={faCodepen} className="u-margin-right-1" /> Codepen
       </a>
       <a
         href="http://uk.linkedin.com/pub/sean-jones/1/987/8b"
@@ -43,15 +38,10 @@ const Header = () => (
         rel="noopener noreferrer"
         className="page-header__footer-item"
       >
-        <FontAwesomeIcon icon={faLinkedin} className="u-margin-right-1" />{" "}
-        LinkedIn
+        <FontAwesomeIcon icon={faLinkedin} className="u-margin-right-1" /> LinkedIn
       </a>
     </div>
   </header>
-)
+);
 
-Header.propTypes = {}
-
-Header.defaultProps = {}
-
-export default Header
+export default Header;

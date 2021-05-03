@@ -23,12 +23,12 @@
 
   @each $key, $value in $colors {
     /* Backgrounds */
-    .u-bg-#{$key} {
+    .u-bg-#{"" + $key} {
       background-color: $value !important;
     }
 
     /* Colors */
-    .u-#{$key} {
+    .u-#{"" + $key} {
       color: $value !important;
     }
 
@@ -37,17 +37,17 @@
       Use with another border utility that sets border-width and style 
       i.u-e .u-border { border-width: 1px); border-style: solid); }     
     */
-    .u-border--#{$key} {
+    .u-border--#{"" + $key} {
       border-color: $value !important;
     }
 
     /* Fills for SVG */
-    .u-fill-#{$key} {
+    .u-fill-#{"" + $key} {
       fill: $value !important;
     }
 
     /* Strokes for SVG */
-    .u-stroke-#{$key} {
+    .u-stroke-#{"" + $key} {
       stroke: $value !important;
     }
   }
