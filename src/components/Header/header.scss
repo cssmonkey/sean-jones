@@ -6,9 +6,9 @@
   min-height: 100vh;
 
   &__inner {
+    border-top: 4px solid get-color(blue);
     flex: 1;
     padding: $base-spacing * 2;
-    max-width: 65rem;
 
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     }
     a:hover,
     a:active {
-      color: get-color(black);
+      color: get-color(green);
     }
   }
   &__footer-item {
@@ -33,7 +33,10 @@
     padding: $base-spacing 0;
   }
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
+    &__inner {
+      padding-left: $base-spacing * 6;
+    }
     &__footer {
       display: flex;
       justify-content: space-between;
@@ -42,5 +45,20 @@
     &__footer-item {
       flex: none;
     }
+  }
+}
+
+.greeting-emoji {
+  display: none;
+  @include breakpoint(large) {
+    margin-left: -$base-spacing * 3;
+    display: inline-block;
+  }
+}
+
+.page-title-section {
+  @include breakpoint(large) {
+    display: block;
+    margin-left: $base-spacing * 3;
   }
 }

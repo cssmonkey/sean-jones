@@ -7,12 +7,15 @@ import "./header.scss";
 const Header = () => (
   <header className="page-header">
     <div className="page-header__inner">
-      <h1 className="u-font-heading h100 u-green">
-        Hello
-        <br /> my name is Sean Jones
+      <h1 className="u-font-heading h100 u-green page-header-main-title">
+        <span aria-hidden="true" className="greeting-emoji h200">
+          👋
+        </span>{" "}
+        Hello <span className="page-title-section">my name is Sean Jones</span>
       </h1>
       <p className="h100 u-font-heading u-black">
-        I'm a front end developer based in Glasgow, Scotland.
+        <span className="page-title-section">I'm a front end developer</span>{" "}
+        <span className="page-title-section">based in Glasgow, Scotland.</span>
       </p>
     </div>
     <div className="page-header__footer u-font-heading h600 u-grey">
