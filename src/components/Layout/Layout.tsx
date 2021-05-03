@@ -1,14 +1,13 @@
-import React from "react";
-import PropTypes, { InferProps } from "prop-types";
+import React, { FC } from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "../../styles/app.scss";
 import "./layout.scss";
 
-const Layout = ({ children }: InferProps<typeof Layout.propTypes>) => <main>{children}</main>;
+interface LayoutProps {
+  children: JSX.Element | JSX.Element[];
+}
 
-Layout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-};
+const Layout: FC<LayoutProps> = ({ children }) => <main>{children}</main>;
 
 export default Layout;

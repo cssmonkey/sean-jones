@@ -1,9 +1,14 @@
-import React from "react";
-import PropTypes, { InferProps } from "prop-types";
-import { Helmet } from "react-helmet";
+import React, { FC } from "react";
+import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const Seo = ({ description, lang, meta, title }: InferProps<typeof Seo.propTypes>) => {
+interface SeoProps {
+  description?: string;
+  lang?: string;
+  title: string;
+}
+
+const Seo: FC<SeoProps> = ({ description, lang, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -60,22 +65,13 @@ const Seo = ({ description, lang, meta, title }: InferProps<typeof Seo.propTypes
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]}
     />
   );
 };
 
 Seo.defaultProps = {
   lang: `en`,
-  meta: [],
-  description: ``,
-};
-
-Seo.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };
 
 export default Seo;

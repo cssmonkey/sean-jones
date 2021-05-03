@@ -4,14 +4,30 @@
   &__inner {
     padding: $base-spacing * 2;
   }
+  &__image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $base-spacing * 4;
+    width: 100%;
+    max-width: 320px;
+  }
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     &__inner {
+      padding: ($base-spacing * 5) $base-spacing * 10;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 62rem;
-      min-height: 100vh;
     }
+    &__image {
+      margin-left: 0;
+      margin-right: $base-spacing * 6;
+    }
+    &__text {
+      max-width: $base-spacing * 58;
+    }
+  }
+
+  p {
+    font-size: $base-font-size * 1.25;
+    margin-bottom: $base-spacing * 1.5;
   }
 }

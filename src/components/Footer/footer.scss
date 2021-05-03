@@ -1,7 +1,41 @@
 @import "../../styles/app.scss";
 
 .footer {
-  border-top: 1px solid rgba(55, 61, 79, 0.2);
-  margin: $base-spacing * 2;
-  padding: $base-spacing * 1 0 0;
+  border-top: 1px solid lighten(get-color(grey), 50%);
+
+  &__text {
+    text-align: center;
+    padding: $base-spacing;
+  }
+
+  a {
+    color: get-color(black);
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+  }
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.footer-links {
+  padding: $base-spacing $base-spacing * 2;
+
+  &__item {
+    display: block;
+    padding: $base-spacing 0;
+  }
+
+  @include breakpoint(large) {
+    & {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      flex: none;
+      margin: 0 $base-spacing * 2;
+    }
+  }
 }

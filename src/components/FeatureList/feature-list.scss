@@ -1,15 +1,50 @@
 @import "../../styles/app.scss";
 
 .feature-list {
-  display: flex;
-  flex-wrap: wrap;
-  li {
-    margin: $base-spacing;
-    flex: none;
-    padding: $base-spacing $base-spacing * 2;
-    background-color: get-color(pink);
-    color: #000;
+  position: relative;
+  padding: $base-spacing 0;
+  margin: $base-spacing 0;
+  margin-left: $base-spacing;
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
+  &:before {
+    content: "";
+    height: 100%;
+    border-left: 1px solid lighten(get-color(grey), 50%);
+    position: absolute;
+    top: 0;
+    left: 1px;
+  }
+  li {
+    font-size: $base-font-size * 1.25;
+    font-weight: bold;
+    color: get-color(green);
+    padding: ($base-spacing * 0.75) $base-spacing * 2;
+    position: relative;
+  }
+  li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 1px lighten(get-color(grey), 30%), 0 0 0 4px #fff,
+      0 0 0 5px lighten(get-color(grey), 50%), 0 0 0 14px #fff;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 12px;
+    top: $base-spacing * 0.75;
+    left: 1px;
+    transform: translateX(-50%);
+  }
+  // li {
+  //   margin: $base-spacing;
+  //   flex: none;
+  //   padding: $base-spacing $base-spacing * 2;
+  //   background-color: get-color(pink);
+  //   color: #000;
+  // }
   // li:not(:last-child) {
   //   margin-bottom: $base-spacing;
   // }

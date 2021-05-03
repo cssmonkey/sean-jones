@@ -14,6 +14,14 @@
     word-break: break-word;
   }
 
+  .u-font-underline:after {
+    content: "";
+    display: block;
+    margin-top: $base-spacing * 2;
+    width: 200px;
+    border-bottom: 2px solid get-color(blue);
+  }
+
   @each $font in $fontsFamilies {
     .u-font-#{map-get($font, class)} {
       font-family: map-get($font, family);
