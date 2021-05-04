@@ -11,6 +11,18 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Sean Jones - front end developer`,
+        short_name: `SeanJones`,
+        start_url: `/`,
+        background_color: `#f8f8f8`,
+        theme_color: `#002e43`,
+        display: `standalone`,
+        icon: `src/images/gatsby-icon.png`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
@@ -24,4 +36,4 @@ module.exports = {
       },
     },
   ],
-}
+};
