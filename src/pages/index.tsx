@@ -29,7 +29,8 @@ const IndexPage = () => (
           "HTML5",
           "CSS/SCSS",
           "Storybook JS",
-          "Webpack",
+          "Typescript",
+          "Vite",
           "React Testing Library",
         ]}
       />
